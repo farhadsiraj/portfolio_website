@@ -6,7 +6,8 @@
 }
 
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
+  /* --ff-primary: 'Source Sans Pro', sans-serif; */
+  --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Source Code Pro', monospace;
 
   --fw-reg: 300;
@@ -35,6 +36,10 @@
 }
 
 /* General Styles */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--clr-light);
@@ -192,6 +197,26 @@ header {
   z-index: 1000;
 }
 
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translate(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
 .hamburger {
   display: block;
   position: relative;
@@ -200,7 +225,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-dark);
+  background: var(--clr-accent);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -317,7 +342,13 @@ header {
   }
 }
 
+.about-me-container {
+  background: var(--clr-dark);
+}
+
 .about-me {
+  /* background: var(--clr-dark); */
+  color: var(--clr-light);
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -395,6 +426,31 @@ header {
   opacity: 0.75;
 }
 
+.portfolio-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .portfolio-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-button-container .btn {
+    margin: 0;
+  }
+}
+
+.portfolio-button-container .btn {
+  width: 13em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.portfolio-button-container a + a {
+  margin-left: 2em;
+}
 /* Footer */
 
 .footer {
@@ -438,3 +494,131 @@ header {
 .social-list__link {
   padding: 0.5em;
 }
+
+.copyright {
+  width: 100%;
+  margin: 2.5em 0 0 0;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Portfolio Items */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#DSLD_img,
+#DSLD_gif {
+  border-radius: 15px;
+}
+
+/* #DSLD_icon {
+  scale: 1.5;
+} */
+
+#DSLD_intro {
+  padding: 5em 2em 3em 2em;
+}
+
+.port_icon {
+  scale: 5;
+}
+
+#tech-stack {
+  padding: 1em 2em 3em 2em;
+  justify-content: center;
+}
+
+.tech-stack h3,
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-tech {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.iconify {
+  width: 100px;
+  height: 100px;
+  margin: 25px;
+}
+
+.tech_item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#reunion_events {
+  margin: 0 auto;
+}
+
+/* Logo */
+
+/* body.is-preload #header.alt > * {
+  opacity: 0;
+}
+
+#header.alt > * {
+  -moz-transition: opacity 3s ease;
+  -webkit-transition: opacity 3s ease;
+  -ms-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+#header.alt .logo {
+  -moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+  -webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
+  -ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
+  transition: opacity 1.25s ease, transform 0.5s ease;
+  -moz-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  display: block;
+  margin: 0 0 1.5em 0;
+  color: var(--clr-accent);
+  /* background: red; */
+}
+
+#header.alt .logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+body.is-preload #header.alt .logo {
+  -moz-transform: scale(0.8) rotate(-30deg);
+  -webkit-transform: scale(0.8) rotate(-30deg);
+  -ms-transform: scale(0.8) rotate(-30deg);
+  transform: scale(0.8) rotate(-30deg);
+} */
