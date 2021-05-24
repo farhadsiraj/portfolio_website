@@ -607,7 +607,7 @@ h2 {
   display: block;
   margin: 0 0 1.5em 0;
   color: var(--clr-accent);
-  /* background: red; */
+  background: red;
 }
 
 #header.alt .logo img {
