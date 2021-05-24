@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSLD</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
@@ -27,7 +28,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="img/logo_test.png" alt="" />
+        <div class="logo"><img src="img/logo.png" alt="" /></div>
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -150,6 +151,17 @@
             data-inline="false"
           ></span>
         </div>
+
+        <div class="tech_item">
+          Teachable Machine
+          <span
+            class="iconify"
+            data-icon="bi:badge-tm"
+            data-inline="false"
+            color="blue"
+          ></span>
+        </div>
+
         <div class="tech_item">
           Firebase
           <span
@@ -166,6 +178,24 @@
             data-inline="false"
           ></span>
         </div>
+
+        <div class="tech_item">
+          HTML5
+          <span
+            class="iconify"
+            data-icon="vscode-icons:file-type-html"
+            data-inline="false"
+          ></span>
+        </div>
+        <div class="tech_item">
+          CSS3
+          <span
+            class="iconify"
+            data-icon="vscode-icons:file-type-css"
+            data-inline="false"
+          ></span>
+        </div>
+
         <div class="tech_item">
           Styled-Components
           <span
@@ -190,51 +220,34 @@
             data-inline="false"
           ></span>
         </div>
-        <div class="tech_item">
-          HTML5
-          <span
-            class="iconify"
-            data-icon="vscode-icons:file-type-html"
-            data-inline="false"
-          ></span>
-        </div>
-        <div class="tech_item">
-          CSS3
-          <span
-            class="iconify"
-            data-icon="vscode-icons:file-type-css"
-            data-inline="false"
-          ></span>
-        </div>
-
-        <div class="tech_item">
-          Teachable Machine
-          <span
-            class="iconify"
-            data-icon="bi:badge-tm"
-            data-inline="false"
-            color="blue"
-          ></span>
-        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <a href="mailto:farhadsiraj@gmail.com" class="footer__link"
+      <!-- <a href="mailto:farhadsiraj@gmail.com" class="footer__link"
         >farhadsiraj@gmail.com</a
-      >
+      > -->
+
+      <h4>Get in touch!</h4>
       <ul class="social-list">
         <li class="social-list__item">
           <a
             class="social-list__link"
             href="mailto:farhadsiraj@gmail.com?subject=Hello!"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <i class="fab far fa-envelope alt"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/farhadsiraj">
+          <a
+            class="social-list__link"
+            href="https://github.com/farhadsiraj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fab fa-github"></i>
           </a>
         </li>
@@ -242,16 +255,26 @@
           <a
             class="social-list__link"
             href="https://www.linkedin.com/in/farhadsiraj/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <i class="fab fa-linkedin alt"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://farhadsiraj.medium.com/">
-            <i class="fab fa-medium alt"></i>
+          <a
+            class="social-list__link"
+            href="https://drive.google.com/file/d/1nAyoiC8GthhLCaPJF-b56t46dnOYCHJS/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="far fa-file-pdf"></i>
           </a>
         </li>
       </ul>
+      <p class="copyright" style="text-align: center">
+        &copy; 2021 Farhad Siraj
+      </p>
     </footer>
 
     <script src="js/index.js"></script>
