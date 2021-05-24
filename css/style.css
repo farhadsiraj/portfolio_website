@@ -380,6 +380,7 @@ header {
     width: calc(100% + 4em);
     padding-left: 2em;
     padding-right: calc(400px + 2em);
+    color: var(--clr-dark);
   }
 
   .about-me__img {
