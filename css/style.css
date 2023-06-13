@@ -447,8 +447,10 @@ header {
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  /* background: var(--clr-accent); */
   overflow: hidden;
+  margin: 10px;
+  border-radius: 5%;
 }
 
 .portfolio__img {
@@ -624,6 +626,11 @@ h2 {
   justify-content: center;
   text-align: center;
   align-items: center;
+  transition: transform 0.3s;
+}
+
+.tech_item:hover {
+  transform: scale(1.2);
 }
 
 #reunion_events {
